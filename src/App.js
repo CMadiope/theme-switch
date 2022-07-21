@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      Theme Switcher
+      <h3>Theme Switcher</h3>
     </div>
   );
 }
