@@ -16,4 +16,26 @@ body {
   overflow-x: hidden;
 }
 
+// theme buttons color
+.light{
+  background-color: hsl(0, 0%, 93%);
+}
+.dark {
+  background-color: hsl(0, 0%, 20%);
+}
+.blue {
+  background-color: hsl(195, 53%, 79%);
+}
+.green {
+  background-color: hsl(150, 80%, 15%);
+}
+.brown {
+  background-color: hsl(39, 70%, 50%);
+}
+.pink {
+  background-color: hsl(350, 100%, 88%);
+}
+.active {
+  border: 3px solid hsl(0, 0%, 87%);
+}
 `
