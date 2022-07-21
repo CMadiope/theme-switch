@@ -15,10 +15,13 @@ import {
   brown,
   pink,
 } from "./Components/styles/Theme.styled";
+import { useState } from "react";
 
 function App() {
+  //theme state
+  const [selectedTheme, setSelectedTheme] = useState(light);
   return (
-    <ThemeProvider theme= {light}>
+    <ThemeProvider theme={selectedTheme}>
       <div className='App'>
         <GlobalStyles />
         <Header>Game of Thrones Quotes</Header>
