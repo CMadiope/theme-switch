@@ -33,12 +33,30 @@ function App() {
 
         <ThemeContainer>
           <span>Themes: </span>
-          <ThemeButton className='light active'></ThemeButton>
-          <ThemeButton className='dark'></ThemeButton>
-          <ThemeButton className='blue'></ThemeButton>
-          <ThemeButton className='green'></ThemeButton>
-          <ThemeButton className='brown'></ThemeButton>
-          <ThemeButton className='pink'></ThemeButton>
+          <ThemeButton
+            className={`light ${selectedTheme === light ? "active" : ""}`}
+            onClick={() => HandleThemeChange(light)}
+          ></ThemeButton>
+          <ThemeButton
+            className={`dark ${selectedTheme === dark ? "active" : ""}`}
+            onClick={() => HandleThemeChange(light)}
+          ></ThemeButton>
+          <ThemeButton
+            className={`blue ${selectedTheme === blue ? "active" : ""}`}
+            onClick={() => HandleThemeChange(light)}
+          ></ThemeButton>
+          <ThemeButton
+            className={`green ${selectedTheme === green ? "active" : ""}`}
+            onClick={() => HandleThemeChange(light)}
+          ></ThemeButton>
+          <ThemeButton
+            className={`brown ${selectedTheme === brown ? "active" : ""}`}
+            onClick={() => HandleThemeChange(light)}
+          ></ThemeButton>
+          <ThemeButton
+            className={`pink ${selectedTheme === pink ? "active" : ""}`}
+            onClick={() => HandleThemeChange(light)}
+          ></ThemeButton>
         </ThemeContainer>
 
         <Quotes />
