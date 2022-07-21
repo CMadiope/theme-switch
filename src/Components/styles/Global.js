@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import * as theme from "./Theme.styled";
 
 export const GlobalStyles = createGlobalStyle`
 
@@ -10,32 +11,32 @@ export const GlobalStyles = createGlobalStyle`
   box-sizing: border-box;
 }
 body {
-  background-color: hsl(0, 0%, 100%);
-  color: hsl(0, 1%, 16%);
+  background-color: ${({ theme }) => theme.colors.background};
+  color: ${({ theme }) => theme.colors.text};
   font-family: monospace;
   overflow-x: hidden;
 }
 
 // theme buttons color
 .light{
-  background-color: hsl(0, 0%, 93%);
+  background-color: ${theme.light.colors.header};
 }
 .dark {
-  background-color: hsl(0, 0%, 20%);
+  background-color: ${theme.dark.colors.header};
 }
 .blue {
-  background-color: hsl(195, 53%, 79%);
+  background-color: ${theme.blue.colors.header};
 }
 .green {
-  background-color: hsl(150, 80%, 15%);
+  background-color: ${theme.green.colors.header};
 }
 .brown {
-  background-color: hsl(39, 70%, 50%);
+  background-color: ${theme.brown.colors.header};
 }
 .pink {
-  background-color: hsl(350, 100%, 88%);
+  background-color: ${theme.pink.colors.header};
 }
 .active {
-  border: 3px solid hsl(0, 0%, 87%);
+  border: 3px solid ${({ theme }) => theme.colors.border};
 }
-`
+`;
