@@ -20,6 +20,11 @@ import { useState } from "react";
 function App() {
   //theme state
   const [selectedTheme, setSelectedTheme] = useState(light);
+
+  //function to handle user them selection on click and save it to local storage
+  const HandleThemeChange = (theme) => {
+    setSelectedTheme(theme);
+  };
   return (
     <ThemeProvider theme={selectedTheme}>
       <div className='App'>
